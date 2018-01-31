@@ -33,3 +33,9 @@ exports.handler = (event, context, callback) => {
       })
     })
 }
+
+exports.schemas = [
+  require('./api/schema/Token')
+]
+
+exports.api = require('./api/iris-api')

@@ -1,0 +1,27 @@
+{
+  "$context": "https://github.com/NordicSemiconductor/nrfcloud-freyr#irisapiresource",
+  "$contextVersion": 1,
+  "paths": {
+    "/token": {
+      "summary": "Creates token",
+      "description": "Creates an identity token to be used for authenticating the user against the API",
+      "operationId": "createToken",
+      "method": "POST",
+      "successResponses": {
+        "201": {
+          "description": "The tenants for the authenticated user",
+          "schema": "Token"
+        }
+      },
+      "problemResponses": [
+        403
+      ],
+      "lambda": {
+        "handler": "index.handler"
+      },
+      "tags": [
+        "Testing"
+      ]
+    }
+  }
+}

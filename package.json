@@ -45,6 +45,7 @@
   "dependencies": {},
   "files": [
     "index.js",
+    "api",
     "README.md"
   ],
   "publishConfig": {
@@ -54,46 +55,5 @@
     "coverageReporters": [
       "lcov"
     ]
-  },
-  "iris-api": {
-    "$context": "https://github.com/NordicSemiconductor/nrfcloud-freyr#irisapiresource",
-    "$contextVersion": 1,
-    "paths": {
-      "/token": {
-        "summary": "Creates token",
-        "description": "Creates an identity token to be used for authenticating the user against the API",
-        "operationId": "createToken",
-        "method": "POST",
-        "successResponses": {
-          "201": {
-            "description": "The tenants for the authenticated user",
-            "schema": {
-              "title": "Token",
-              "description": "The token",
-              "type": "object",
-              "properties": {
-                "token": {
-                  "type": "string",
-                  "description": "The JSON Web Token"
-                }
-              },
-              "additionalProperties": false,
-              "required": [
-                "token"
-              ]
-            }
-          }
-        },
-        "problemResponses": [
-          403
-        ],
-        "lambda": {
-          "handler": "index.handler"
-        },
-        "tags": [
-          "Testing"
-        ]
-      }
-    }
   }
 }
