@@ -1,4 +1,4 @@
-# Custom API Gateway Authorizer
+# Create Token Endpoint
 
 [![npm version](https://img.shields.io/npm/v/@nrfcloud/create-token.svg)](https://www.npmjs.com/package/@nrfcloud/create-token)
 [![Build Status](https://travis-ci.org/nRFCloud/create-token.svg?branch=master)](https://travis-ci.org/nRFCloud/create-token)
@@ -10,7 +10,9 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/nrfcloud/create-token/badge.svg?targetFile=package.json)](https://snyk.io/test/github/nrfcloud/create-token?targetFile=package.json)
 [![Maintainability](https://api.codeclimate.com/v1/badges/31e9be8707b0aeede72f/maintainability)](https://codeclimate.com/github/nRFCloud/create-token/maintainability)
 
-Returns Cognito Id tokens for a user pool.
+API endpoint which creates an identity token to be used for authenticating the user against the API.
+
+> :warning: This endpoint should only be used for testing environments
 
 ## Tests
 
