@@ -1,6 +1,6 @@
 # Create Token Endpoint
 
-[![npm version](https://img.shields.io/npm/v/@nrfcloud/create-token.svg)](https://www.npmjs.com/package/@nrfcloud/create-token)
+[![npm dev version](https://img.shields.io/npm/v/@nrfcloud/create-token/dev.svg)](https://www.npmjs.com/package/@nrfcloud/create-token)
 [![Build Status](https://travis-ci.org/nRFCloud/create-token.svg?branch=master)](https://travis-ci.org/nRFCloud/create-token)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/31e9be8707b0aeede72f/test_coverage)](https://codeclimate.com/github/nRFCloud/create-token/test_coverage)  
 [![Greenkeeper badge](https://badges.greenkeeper.io/nrfcloud/create-token.svg)](https://greenkeeper.io/)
